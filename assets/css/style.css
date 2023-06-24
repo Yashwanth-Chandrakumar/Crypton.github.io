@@ -1298,7 +1298,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 }
 
 .product-grid .btn-action:hover {
-  background: var(--eerie-black);
+  background: red;
   color: var(--white);
   border-color: var(--eerie-black);
 }
@@ -1865,7 +1865,9 @@ footer {
   }
 }
 
-
+.btn-action.liked {
+  background-color: red;
+}
 
 /**
  * responsive larger than 570px screen
