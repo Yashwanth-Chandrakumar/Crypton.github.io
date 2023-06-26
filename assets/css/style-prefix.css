@@ -1,18 +1,3 @@
-/*-----------------------------------*\
-  #style.css
-\*-----------------------------------*/
-
-/**
- * copyright 2022 @codewithsadee 
- */
-
-
-
-
-
-/*-----------------------------------*\
-  #CUSTOM PROPERTY
-\*-----------------------------------*/
 
 :root {
 
@@ -3065,7 +3050,7 @@ footer {
 
 
 
-
+}
 /**
  * responsive larger than 1200px screen
  */
@@ -3188,13 +3173,15 @@ footer {
   }
 
 }
+
 .total-price-cart{
   text-align: right;
-  margin-right: 5%;
+
 }
 #caart{
   background-color: rgb(246, 246, 246);
   margin-left: 5%;
+
 }
 #price{
   text-align: center;
@@ -3207,4 +3194,153 @@ footer {
 .rembtn:hover{
    background-color:salmon;
    padding: 0px 10px 0px 10px;
+}
+body{
+  overflow-x: hidden;
+}
+#cart-checkout {
+  appearance: none;
+  background-color: #FFFFFF;
+  border-width: 0;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Clarkson,Helvetica,sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1em;
+  margin: 0;
+  opacity: 1;
+  outline: 0;
+  padding: 1.5em 2.2em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-rendering: geometricprecision;
+  text-transform: uppercase;
+  transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1),background-color 100ms cubic-bezier(.694, 0, 0.335, 1),color 100ms cubic-bezier(.694, 0, 0.335, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+#cart-checkout:before {
+  animation: opacityFallbackOut .5s step-end forwards;
+  backface-visibility: hidden;
+  background-color: rgb(173, 255, 47);
+  clip-path: polygon(-1% 0, 0 0, -1% 100%, -1% 100%);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translateZ(0);
+  transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
+  width: 100%;
+}
+
+#cart-checkout:hover:before {
+  animation: opacityFallbackIn 0s step-start forwards;
+  clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+}
+
+#cart-checkout:after {
+  background-color: #FFFFFF;
+}
+
+#cart-checkout span {
+  z-index: 1;
+  position: relative;
+}
+@media only screen and (max-width: 767px) {
+  html{overflow-x: hidden;}
+}
+@media (min-width: 1025px) {
+  .h-custom {
+  height: 100vh !important;
+  }
+  }
+  
+  .number-input input[type="number"] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+  }
+  
+  .number-input input[type=number]::-webkit-inner-spin-button,
+  .number-input input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  }
+  
+  .number-input button {
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin: 0;
+  position: relative;
+  }
+  
+  .number-input button:before,
+  .number-input button:after {
+  display: inline-block;
+  position: absolute;
+  content: '';
+  height: 2px;
+  transform: translate(-50%, -50%);
+  }
+  
+  .number-input button.plus:after {
+  transform: translate(-50%, -50%) rotate(90deg);
+  }
+  
+  .number-input input[type=number] {
+  text-align: center;
+  }
+  
+  .number-input.number-input {
+  border: 1px solid #ced4da;
+  width: 10rem;
+  border-radius: .25rem;
+  }
+  
+  .number-input.number-input button {
+  width: 2.6rem;
+  height: .7rem;
+  }
+  
+  .number-input.number-input button.minus {
+  padding-left: 10px;
+  }
+  
+  .number-input.number-input button:before,
+  .number-input.number-input button:after {
+  width: .7rem;
+  background-color: #495057;
+  }
+  
+  .number-input.number-input input[type=number] {
+  max-width: 4rem;
+  padding: .5rem;
+  border: 1px solid #ced4da;
+  border-width: 0 1px;
+  font-size: 1rem;
+  height: 2rem;
+  color: #495057;
+  }
+
+#payment{
+  display: hidden;
+}
+#ptm{
+  text-align: center;
+}
+.form-control:invalid {
+  border-color: #dc3545;
 }
