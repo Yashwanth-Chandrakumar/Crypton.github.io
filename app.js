@@ -1,6 +1,10 @@
 
 var x = parseInt(localStorage.getItem('likeCount3')) || 0;
 var y = parseInt(localStorage.getItem('bagCount3')) || 0;
+if(y==0){
+  let text = "Your shopping cart is empty. Try buying some nice shoes they fit you well !";
+  document.getElementById("nameitem").innerHTML = text;
+}
 function liked() {
   x = x + 1;
   localStorage.setItem('likeCount3', x);
@@ -21,7 +25,6 @@ window.addEventListener('DOMContentLoaded', function() {
   document.getElementById("bagg").innerHTML = y;
   document.getElementById("bagg1").innerHTML = y;
 });
-
  function frock() {
     var elementsToHide = document.querySelectorAll('[id="shoes"]');
     for (var i = 0; i < elementsToHide.length; i++) {
