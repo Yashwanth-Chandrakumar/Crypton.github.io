@@ -25,28 +25,11 @@
   mytime=setTimeout('display_ct()',refresh)
   }
   
-  function display_ct() {
-  var today = new Date();
-  var date = today.getDate();
-  var hour = today.getHours();
-  var min = today.getMinutes();
-  var sec = today.getSeconds();
-
-  document.getElementById('days1').innerHTML =date + 2 - date;
-  document.getElementById('hours1').innerHTML = 24 - hour;
-  document.getElementById('mins1').innerHTML = 60 - min;
-  document.getElementById('secs1').innerHTML = 60 - sec;
-  document.getElementById('days2').innerHTML =date + 5 - date;
-  document.getElementById('hours2').innerHTML = 24 - hour;
-  document.getElementById('mins2').innerHTML = 60 - min;
-  document.getElementById('secs2').innerHTML = 60 - sec;
-
-  display_c();
-   }
+  
   </script>
 </head>
 
-<body onload=display_ct();>
+<body>
 
 
   <div class="overlay" data-overlay></div>
@@ -174,12 +157,12 @@
                   <ul class="dropdown-list">
       
                     <li class="dropdown-item">
-                      <a href="#">Settings</a>
-                    </li>
-      
-                    <li class="dropdown-item">
                       <a href="checkout.html">Cart</a>
                     </li>
+                    <li class="dropdown-item">
+                      <a href="products.html">Products</a>
+                    </li>
+      
       
                     <li class="dropdown-item">
                       <a href="#">Favourites</a>
@@ -221,7 +204,7 @@
         <ul class="desktop-menu-category-list">
 
           <li class="menu-category">
-            <a href="#" class="menu-title">Home</a>
+            <a href="index.html" class="menu-title">Home</a>
           </li>
 
           <li class="menu-category">
@@ -1319,7 +1302,7 @@
                         <ion-icon name="heart-outline"></ion-icon>
                       </button>
                     
-                      <button class="cart-btn-action" onclick="bagged(this);bagging()">
+                      <button class="cart-btn-action" onclick="bagged(this)">
                         <ion-icon name="bag-add-outline"></ion-icon>
                       </button>
     
@@ -1367,7 +1350,7 @@
                         <ion-icon name="heart-outline"></ion-icon>
                       </button>
                  
-                      <button class="cart-btn-action" onclick="bagged(this);bagging();";>
+                      <button class="cart-btn-action" onclick="bagged(this);";>
                         <ion-icon name="bag-add-outline"></ion-icon>
                       </button>
                     </div>
@@ -1410,7 +1393,7 @@
                         <ion-icon name="heart-outline"></ion-icon>
                       </button>
                  
-                      <button class="cart-btn-action" onclick="bagged(this);bagging()";>
+                      <button class="cart-btn-action" onclick="bagged(this)";>
                         <ion-icon name="bag-add-outline"></ion-icon>
                       </button>
                     </div>
@@ -1455,7 +1438,7 @@
                         <ion-icon name="heart-outline"></ion-icon>
                       </button>
                  
-                      <button class="cart-btn-action" onclick="bagged(this);bagging()";>
+                      <button class="cart-btn-action" onclick="bagged(this)";>
                         <ion-icon name="bag-add-outline"></ion-icon>
                       </button>
                     </div>
@@ -1498,7 +1481,7 @@
                         <ion-icon name="heart-outline"></ion-icon>
                       </button>
                  
-                      <button class="cart-btn-action" onclick="bagged(this);bagging()";>
+                      <button class="cart-btn-action" onclick="bagged(this)";>
                         <ion-icon name="bag-add-outline"></ion-icon>
                       </button>
                     </div>
@@ -1543,7 +1526,7 @@
                         <ion-icon name="heart-outline"></ion-icon>
                       </button>
                  
-                      <button class="cart-btn-action" onclick="bagged(this);bagging()";>
+                      <button class="cart-btn-action" onclick="bagged(this)";>
                         <ion-icon name="bag-add-outline"></ion-icon>
                       </button>
                     </div>
@@ -1585,7 +1568,7 @@
                         <ion-icon name="heart-outline" ></ion-icon>
                       </button>
                  
-                      <button class="cart-btn-action" onclick="bagged(this);bagging()";>
+                      <button class="cart-btn-action" onclick="bagged(this)";>
                         <ion-icon name="bag-add-outline"></ion-icon>
                       </button>
                     </div>
@@ -1630,7 +1613,7 @@
                         <ion-icon name="heart-outline"></ion-icon>
                       </button>
                  
-                      <button class="cart-btn-action" onclick="bagged(this);bagging()";>
+                      <button class="cart-btn-action" onclick="bagged(this)";>
                         <ion-icon name="bag-add-outline"></ion-icon>
                       </button>
                     </div>
@@ -1673,7 +1656,7 @@
                         <ion-icon name="heart-outline"></ion-icon>
                       </button>
                  
-                      <button class="cart-btn-action" onclick="bagged(this);bagging()";>
+                      <button class="cart-btn-action" onclick="bagged(this)";>
                         <ion-icon name="bag-add-outline"></ion-icon>
                       </button>
                     </div>
@@ -1718,7 +1701,7 @@
                         <ion-icon name="heart-outline"></ion-icon>
                       </button>
                  
-                      <button class="cart-btn-action" onclick="bagged(this);bagging()";>
+                      <button class="cart-btn-action" onclick="bagged(this)";>
                         <ion-icon name="bag-add-outline"></ion-icon>
                       </button>
                     </div>
@@ -1761,7 +1744,7 @@
                         <ion-icon name="heart-outline"></ion-icon>
                       </button>
                  
-                      <button class="cart-btn-action" onclick="bagged(this);bagging()";>
+                      <button class="cart-btn-action" onclick="bagged(this)";>
                         <ion-icon name="bag-add-outline"></ion-icon>
                       </button>
                     </div>
@@ -1806,7 +1789,7 @@
                         <ion-icon name="heart-outline"></ion-icon>
                       </button>
                  
-                      <button class="cart-btn-action" onclick="bagged(this);bagging()";>
+                      <button class="cart-btn-action" onclick="bagged(this)";>
                         <ion-icon name="bag-add-outline"></ion-icon>
                       </button>
                     </div>
@@ -1850,7 +1833,7 @@
                         <ion-icon name="heart-outline"></ion-icon>
                       </button>
     
-                      <button class="cart-btn-action" onclick="bagged(this);bagging()";>
+                      <button class="cart-btn-action" onclick="bagged(this)";>
                         <ion-icon name="bag-add-outline"></ion-icon>
                       </button>
     
@@ -1898,7 +1881,7 @@
                         <ion-icon name="heart-outline"></ion-icon>
                       </button>
                  
-                      <button class="cart-btn-action" onclick="bagged(this);bagging()";>
+                      <button class="cart-btn-action" onclick="bagged(this)";>
                         <ion-icon name="bag-add-outline"></ion-icon>
                       </button>
                     </div>
@@ -1941,7 +1924,7 @@
                         <ion-icon name="heart-outline"></ion-icon>
                       </button>
                  
-                      <button class="cart-btn-action" onclick="bagged(this);bagging()";>
+                      <button class="cart-btn-action" onclick="bagged(this)";>
                         <ion-icon name="bag-add-outline"></ion-icon>
                       </button>
                     </div>
@@ -1986,7 +1969,7 @@
                         <ion-icon name="heart-outline"></ion-icon>
                       </button>
                  
-                      <button class="cart-btn-action" onclick="bagged(this);bagging()";>
+                      <button class="cart-btn-action" onclick="bagged(this)";>
                         <ion-icon name="bag-add-outline"></ion-icon>
                       </button>
                     </div>
@@ -2029,7 +2012,7 @@
                         <ion-icon name="heart-outline"></ion-icon>
                       </button>
                  
-                      <button class="cart-btn-action" onclick="bagged(this);bagging()";>
+                      <button class="cart-btn-action" onclick="bagged(this)";>
                         <ion-icon name="bag-add-outline"></ion-icon>
                       </button>
                     </div>
@@ -2074,7 +2057,7 @@
                         <ion-icon name="heart-outline"></ion-icon>
                       </button>
                  
-                      <button class="cart-btn-action" onclick="bagged(this);bagging()";>
+                      <button class="cart-btn-action" onclick="bagged(this)";>
                         <ion-icon name="bag-add-outline"></ion-icon>
                       </button>
                     </div>
@@ -2116,7 +2099,7 @@
                         <ion-icon name="heart-outline" ></ion-icon>
                       </button>
                  
-                      <button class="cart-btn-action" onclick="bagged(this);bagging()";>
+                      <button class="cart-btn-action" onclick="bagged(this)";>
                         <ion-icon name="bag-add-outline"></ion-icon>
                       </button>
                     </div>
@@ -2161,7 +2144,7 @@
                         <ion-icon name="heart-outline"></ion-icon>
                       </button>
                  
-                      <button class="cart-btn-action" onclick="bagged(this);bagging()";>
+                      <button class="cart-btn-action" onclick="bagged(this)";>
                         <ion-icon name="bag-add-outline"></ion-icon>
                       </button>
                     </div>
@@ -2204,7 +2187,7 @@
                         <ion-icon name="heart-outline"></ion-icon>
                       </button>
                  
-                      <button class="cart-btn-action" onclick="bagged(this);bagging()";>
+                      <button class="cart-btn-action" onclick="bagged(this)";>
                         <ion-icon name="bag-add-outline"></ion-icon>
                       </button>
                     </div>
@@ -2249,7 +2232,7 @@
                         <ion-icon name="heart-outline"></ion-icon>
                       </button>
                  
-                      <button class="cart-btn-action" onclick="bagged(this);bagging()";>
+                      <button class="cart-btn-action" onclick="bagged(this)";>
                         <ion-icon name="bag-add-outline"></ion-icon>
                       </button>
                     </div>
@@ -2292,7 +2275,7 @@
                         <ion-icon name="heart-outline"></ion-icon>
                       </button>
                  
-                      <button class="cart-btn-action" onclick="bagged(this);bagging()";>
+                      <button class="cart-btn-action" onclick="bagged(this)";>
                         <ion-icon name="bag-add-outline"></ion-icon>
                       </button>
                     </div>
@@ -2337,7 +2320,7 @@
                         <ion-icon name="heart-outline"></ion-icon>
                       </button>
                  
-                      <button class="cart-btn-action" onclick="bagged(this);bagging()";>
+                      <button class="cart-btn-action" onclick="bagged(this)";>
                         <ion-icon name="bag-add-outline"></ion-icon>
                       </button>
                     </div>
@@ -2699,20 +2682,14 @@ function addToCart(productName, productPrice) {
 
   localStorage.setItem('cartItems', JSON.stringify(cartItems));
 
-  // Optional: Display a success message or update the UI
   console.log("Product added to cart:", cartItem);
 }
 
     </script>
 <script src="cart.js"></script>
-  <!--
-    - custom js link
-  -->
+ 
   <script src="./assets/js/script.js"></script>
 
-  <!--
-    - ionicon link
-  -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
